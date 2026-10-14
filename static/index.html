@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ruta Desarrollo de GD</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><defs><linearGradient id='g' x1='0' y1='0' x2='0' y2='1'><stop offset='0' stop-color='%2344d52d'/><stop offset='1' stop-color='%23d3dd07'/></linearGradient></defs><g fill='url(%23g)'><rect x='6' y='3' width='9' height='12' rx='2.5'/><rect x='17' y='3' width='9' height='12' rx='2.5'/><rect x='6' y='17' width='9' height='12' rx='2.5'/><rect x='17' y='17' width='9' height='12' rx='2.5'/></g></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="app">
+  <aside class="sidebar">
+    <div class="brand">
+      <div class="logo-tile"><img src="logo-solcor-blanco.png" alt="SOLCOR Colombia"></div>
+      <div class="app-name"><strong>Ruta Desarrollo de GD</strong><div class="grad-line"></div></div>
+    </div>
+    <nav id="nav">
+      <a href="#/tablero" data-r="tablero"><i>▦</i>Tablero</a>
+      <a href="#/proyectos" data-r="proyectos"><i>◧</i>Proyectos</a>
+      <a href="#/pendientes" data-r="pendientes"><i>☑</i>Mis pendientes</a>
+      <a href="#/pipeline" data-r="pipeline"><i>⏷</i>Embudo del pipeline</a>
+      <a href="#/red" data-r="red"><i>ϟ</i>Red y circuitos</a>
+      <a href="#/planificador" data-r="planificador"><i>⤳</i>Planificador de ruta</a>
+      <a href="#/comparativo" data-r="comparativo"><i>▤</i>Comparativo entidades</a>
+      <a href="#/sharepoint" data-r="sharepoint"><i>⟳</i>SharePoint</a>
+      <a href="#/soporte" data-r="soporte"><i>?</i>Soporte</a>
+      <a href="#/catalogo" data-r="catalogo"><i>☰</i>Catálogo</a>
+      <a href="#/datos" data-r="datos"><i>⇩</i>Datos</a>
+    </nav>
+    <div class="side-foot">
+      <div id="userBox" class="user-box"></div>
+      <button class="theme-btn" id="themeBtn" title="Cambiar tema">◐ Tema</button>
+      <span class="muted small" id="hoyLbl"></span>
+    </div>
+  </aside>
+  <main id="main"><div class="loading">Cargando…</div></main>
+</div>
+<div id="modal" class="modal" hidden></div>
+<div id="drawer" class="drawer" hidden></div>
+<div id="toast" class="toast" hidden></div>
+<button id="ayudaBtn" class="ayuda-btn" title="Soporte: dudas y tiquets" onclick="abrirAyuda()" hidden>?</button>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

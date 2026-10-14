@@ -1,0 +1,20 @@
+# Datos reales de la plataforma: NUNCA se suben al repositorio
+# (proyectos, propietarios, contratos, usuarios y contraseñas cifradas, caché de PDF)
+data/
+*.db
+*.db-journal
+pdf_cache.json
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Secretos y configuración local
+.env
+*.env
+secrets*
+
+# Sistema
+.DS_Store
+Thumbs.db
